@@ -333,8 +333,17 @@ Customise the visual style and appearance of your guide.
 
       .step-by-step li:before {
         background: #A0B360;          /* CHANGE THE INSTRUCTION NUMBER BACKGROUND COLOR HERE */
-        border-top-left-radius: 50px;          /* CHANGE THE INSTRUCTION SHAPE HERE */
-        border-bottom-left-radius: 50px;
+        content: "";                  /* CHANGE THE INSTRUCTION SHAPE HERE */
+        position: absolute; 
+        top: -25px; 
+        left: 0; 
+        width: 0; 
+        height: 0; 
+        border-left: 50px solid transparent; 
+        border-right: 50px solid transparent; 
+        border-bottom: 29px solid red;
+        border-radius: 10px;
+        
       }
 
 
